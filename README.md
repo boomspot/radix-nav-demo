@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 15 Project with Radix Navigation
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), featuring a custom Radix Navigation menu implementation with SCSS styling.
+
+## Features
+
+- Next.js 15
+- Radix UI Navigation Menu with SCSS modules
+- Development branch showing how to set navigation menu items open by default
+- [Geist](https://vercel.com/font) font integration
 
 ## Getting Started
 
@@ -16,18 +25,29 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Navigation Menu
+
+The project includes a custom Radix Navigation menu implementation located in `src/components/RadixNavigation.jsx` with styles in `src/styles/radixnav.module.scss`.
+
+### Development Branch
+
+Check out the `menu-default-open` branch to see how to configure the Radix Navigation menu to be open by default during development:
+
+```bash
+git checkout menu-default-open
+```
+
+This can be particularly useful during the development phase when working on menu styling and content.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js and Radix UI, check out the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
+- [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction) - learn about Radix UI components
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial
 
 ## Deploy on Vercel
 
