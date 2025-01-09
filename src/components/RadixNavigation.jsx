@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
@@ -5,10 +6,16 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 import styles from "../styles/radixnav.module.scss";
 
 const NavigationMenuDemo = () => {
+	const [value, setValue] = React.useState("learn");
+
 	return (
-		<NavigationMenu.Root className={styles.Root}>
+		<NavigationMenu.Root 
+			className={styles.Root}
+			value={value}
+			onValueChange={setValue}
+		>
 			<NavigationMenu.List className={styles.MenuList}>
-				<NavigationMenu.Item>
+				<NavigationMenu.Item value="learn">
 					<NavigationMenu.Trigger className={styles.Trigger}>
 						Learn <CaretDownIcon className={styles.CaretDown} aria-hidden />
 					</NavigationMenu.Trigger>
