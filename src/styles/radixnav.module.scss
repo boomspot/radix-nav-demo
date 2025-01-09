@@ -57,6 +57,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	color: black;
 	animation-duration: 250ms;
 	animation-timing-function: ease;
 	&[data-motion="from-start"] {
@@ -192,7 +193,7 @@
 }
 
 .CalloutHeading {
-	color: white;
+	color: black;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.2;
@@ -202,7 +203,7 @@
 
 .CalloutText {
 	all: unset;
-	color: var(--mauve-4);
+	color: black;
 	font-size: 14px;
 	line-height: 1.3;
 }
